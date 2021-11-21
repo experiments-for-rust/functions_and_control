@@ -1,14 +1,18 @@
 fn main() {
-    let a=35;
+    let a=34;
     let b=57;
-    println!("average() returns {}",average(a,b));
+    println!("average() returns {}",average(a as f32,b as f32)); //use as to modify data type
     println!("average2() returns {}",average2(a,b));
+    average3(a,b);
 }
 
-fn average(x:i32, y:i32)->i32{ //define return data type
-    return (x+y)/2;
+fn average(x:f32, y:f32)->f32{ //define returned data type; notice the data type
+    return (x+y)/2.0;
 }
 
 fn average2(x:i32, y:i32)->i32{
     (x+y)/2 //rust-style return
+}
+
+fn average3(x:i32, y:i32){ //void return function
 }
