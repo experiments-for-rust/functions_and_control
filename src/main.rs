@@ -26,3 +26,5 @@ fn gcd(x:i32, y:i32)->i32{
        return gcd(y, x%y);
    }
 }
+
+//NEXT: use condition sentence in value assignment
