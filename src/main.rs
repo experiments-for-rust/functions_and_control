@@ -15,4 +15,5 @@ fn average2(x:i32, y:i32)->i32{
 }
 
 fn average3(x:i32, y:i32){ //void return function
+    println!("average3() directly prints {}",(x+y)/2); //also works without ;
 }
