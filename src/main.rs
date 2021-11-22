@@ -28,3 +28,4 @@ fn gcd(x:i32, y:i32)->i32{
 }
 
 //NEXT: use condition sentence in value assignment
+//match, for, loop, do while
