@@ -55,11 +55,15 @@ fn array_print(){
 
 fn let_if(){
     let tf= false;
-    let n=if tf{
+
+    let n=if tf==true{
         "TRUE"
-    }else{
+    }else if tf==false{
         "FALSE"
+    }else{
+        "ERROR"
     };
+
     println!("n={}",n);
 }
 
@@ -75,4 +79,4 @@ fn echo(){
     println!("ECHO output: {}",echo_io);
 }
 
-//match, loop, while
+//loop, while
