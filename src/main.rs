@@ -72,11 +72,24 @@ fn echo(){
     io::stdout().flush().unwrap();
 
     let mut echo_io:String;
-    echo_io=String::new(); //try to assign in c style
+    echo_io=String::new().trim().to_string(); //try to assign in c style
 
     io::stdin().read_line(&mut echo_io).expect("error");
     
     println!("ECHO output: {}",echo_io);
+
+    //echo 5 times in loop
+
+    let mut i=0;
+
+    loop{
+        i=i+1;
+        println!("ECHO output 5 times in loop: {}",echo_io);  //why the enter at the end of input is also printed?! 
+        if i==5{
+            break;
+        }
+    }
+
 }
 
 //loop, while
