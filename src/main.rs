@@ -1,5 +1,5 @@
-use std::io;
-use std::io::Write;
+//use std::io;
+//use std::io::Write;
 
 fn main() {
     let a=35;
@@ -15,7 +15,7 @@ fn main() {
     array_print();
     let_if();
 
-    echo();
+    loop1();
 
 }
 
@@ -67,16 +67,16 @@ fn let_if(){
     println!("n={}",n);
 }
 
-fn echo(){
-    print!("ECHO input: ");
-    io::stdout().flush().unwrap();
+fn loop1(){
+    //print!("ECHO input: ");
+    //io::stdout().flush().unwrap();
 
-    let mut echo_io:String;
-    echo_io=String::new().trim().to_string(); //try to assign in c style
+    //let mut echo_io:String;
+    //echo_io=String::new().trim().to_string(); //try to assign in c style
+    let out="114514";
 
-    io::stdin().read_line(&mut echo_io).expect("error");
-    
-    println!("ECHO output: {}",echo_io);
+    //io::stdin().read_line(&mut echo_io).expect("error");
+    //why the enter at the end of input is also printed?! 
 
     //echo 5 times in loop
 
@@ -84,7 +84,7 @@ fn echo(){
 
     loop{
         i=i+1;
-        println!("ECHO output 5 times in loop: {}",echo_io);  //why the enter at the end of input is also printed?! 
+        println!("loop1 output 5 times in loop: {}",out); 
         if i==5{
             break;
         }
@@ -92,4 +92,4 @@ fn echo(){
 
 }
 
-//loop, while
+//while
