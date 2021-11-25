@@ -7,16 +7,11 @@ fn main() {
 
     println!("average() returns {}",average(a as f32,b as f32)); //use as to modify data type
     println!("average2() returns {}",average2(a,b));
-
     average3(a,b);
-
     println!("gcd() returns {}",gcd(a,b));
-
     array_print();
     let_if();
-
     loop1();
-
 }
 
 fn average(x:f32, y:f32)->f32{ //define returned data type; notice the data type
@@ -49,8 +44,6 @@ fn array_print(){
     for i in (0..5).rev() {
         println!("array_print() prints {} reversely",array1[i])
     }
-
-
 }
 
 fn let_if(){
@@ -89,7 +82,6 @@ fn loop1(){
             break;
         }
     }
-
 }
 
 //while
