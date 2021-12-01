@@ -61,15 +61,7 @@ fn let_if(){
 }
 
 fn loop1(){
-    //print!("ECHO input: ");
-    //io::stdout().flush().unwrap();
-
-    //let mut echo_io:String;
-    //echo_io=String::new().trim().to_string(); //try to assign in c style
     let out="114514";
-
-    //io::stdin().read_line(&mut echo_io).expect("error");
-    //why the enter at the end of input is also printed?! 
 
     //echo 5 times in loop
 
