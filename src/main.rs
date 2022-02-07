@@ -36,13 +36,22 @@ fn gcd(x:i32, y:i32)->i32{
 
 fn array_print(){
     let array1:[i32;5]=[1,2,3,4,5];
+    let array2=[1,1,4,5,1,4];
 
     for i in array1.iter(){
         println!("array_print() prints {}",i);
     }
 
-    for i in (0..5).rev() {
+    for i in 0..5{
+        println!("array_print() prints {}",array1[i]);
+    }
+
+    for i in (0..5).rev(){
         println!("array_print() prints {} reversely",array1[i])
+    }
+
+    for i in array2.iter(){
+        println!("array_print() prints {}",i);
     }
 }
 
