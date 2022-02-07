@@ -49,9 +49,9 @@ fn array_print(){
 fn let_if(){
     let tf= false;
 
-    let n=if tf==true{
+    let n=if tf{
         "TRUE"
-    }else if tf==false{
+    }else if tf{
         "FALSE"
     }else{
         "ERROR"
